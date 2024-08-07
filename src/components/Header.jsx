@@ -1,14 +1,16 @@
+import { NavLink } from "react-router-dom";
+
 export const Header = () => {
   return (
     <header className="header">
       <div className="container header__container">
-        <a className="header__logo-link">
+        <NavLink to="/" className="header__logo-link">
           <img
             className="header__logo"
             src="image/logo.svg"
             alt="Логотип Cup Time"
           />
-        </a>
+        </NavLink>
         <nav className="header__nav">
           <ul className="header__menu">
             <li className="header__menu-item">
@@ -39,9 +41,9 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <a href="cart.thml" className="header__cart-link">
+        <NavLink to="cart" className="header__cart-link">
           6
-        </a>
+        </NavLink>
       </div>
     </header>
   );
