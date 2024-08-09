@@ -24,7 +24,7 @@ export const Order = () => {
           />
 
           <fieldset className="order__payment">
-            <legend className="order__payment-title">Оплата:</legend>
+            <h3 className="order__payment-title">Оплата:</h3>
             <label className="order__payment-label">
               <input
                 className="order__radio"
